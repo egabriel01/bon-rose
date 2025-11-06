@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="container header-content">
-            <div class="logo">Bon Rosê</div>
+            <p class="logo">Bon Rosê</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -21,56 +21,83 @@
         </div>
     </header>
 
-    <section class="menu-cardapiozin" id="menu-cardapiozin">
-        <div class="container">
+    <main class="container-menu">
+        
             
             <h2 class="section-title">Nosso Cardápio</h2>
 
             <div class="menu-categories">
-                <button class="category-btn active" data-category="entradas">Entradas</button>
-                <button class="category-btn" data-category="principais">Pratos Principais</button>
-                <button class="category-btn" data-category="sobremesas">Sobremesas</button>
+                <button class="category-btn active" id="entradas">Entradas</button>
+                <button class="category-btn" id="principais">Pratos Principais</button>
+                <button class="category-btn" id="sobremesas">Sobremesas</button>    
             </div>
             <div class="menu-items">
 
                 <div class="menu-item" data-category="entradas">
                     <img src="imagens/sunomono.webp" alt="Entrada 1">
-                    <h3>Sunomono<span class="price">R$ 39,90</span></h3>
+                    <h3>Sunomono<span class="price">R$ 25,50</span></h3>
                     <p>Salada refrescante de pepino japonês com um molho agridoce de vinagre de arroz e gergelim</p>
                 </div>
                 <div class="menu-item" data-category="entradas">
-                    <h3>Guioza <span class="price">R$ 29,50</span></h3>
+                    <img src="imagens/guioza.jpg" alt="Entrada 2">
+                    <h3>Guioza <span class="price">R$ 39,50</span></h3>
                     <p>Pastel frito ou cozido no vapor, com massa fina recheada de carne de porco moída ou legumes, servido com molho shoyu.</p>
                 </div>
                 <div class="menu-item" data-category="entradas">
-                    <h3>Guioza <span class="price">R$ 29,50</span></h3>
-                    <p>Pastel frito ou cozido no vapor, com massa fina recheada de carne de porco moída ou legumes, servido com molho shoyu.</p>
+                    <img src="imagens/shimeji.jpg" alt="Entrada 3">
+                    <h3>Shimeji <span class="price">R$ 30,90</span></h3>
+                    <p>É um cogumelo com sabor suave e textura levemente crocante quando cozido.</p>
+                </div>
+                <div class="menu-item" data-category="entradas">
+                    <img src="imagens/lula-empanada.jpg" alt="Entrada 4">
+                    <h3>Lula Empanada <span class="price">R$ 94,90</span></h3>
+                    <p>O prato consiste em anéis de lula fritos e crocantes, empanados em farinha panko.</p>
+                </div>
+                <div class="menu-item" data-category="entradas">
+                    <img src="imagens/ceviche.jpg" alt="Entrada 5">
+                    <h3>Ceviche <span class="price">R$ 64,90</span></h3>
+                    <p>É um prato de peixe (Salmão ou Tilápia) cru marinado em suco de limão ou lima, temperado com pimenta, cebola e coentro.</p>
                 </div>
 
                 <div class="menu-item" data-category="principais">
+                    <img src="imagens/sashimi.jpg" alt="Principal">
                     <h3>Sashimi Puro <span class="price">R$ 68,90</span></h3>
                     <p>Tiras finas de peixe cru, geralmente salmão ou atum, acompanhadas de alga, molho shoyu e wasabi.</p>
                 </div>
                 <div class="menu-item" data-category="principais">
+                    <img src="imagens/sushi.jpg" alt="Principal">
                     <h3>Sushi <span class="price">R$ 39,50</span></h3>
                     <p>Bolinho de arroz enrolado com alga, com recheios variados de frutos do mar, peixe ou vegetais.</p>
                 </div>
                 <div class="menu-item" data-category="principais">
+                    <img src="imagens/tempura.jpg" alt="Principal">
                     <h3>Tempurá <span class="price">R$ 42,90</span></h3>
                     <p>Massa fluida frita, com legumes ou frutos do mar, como camarão.</p>
                 </div>
+                <div class="menu-item" data-category="principais">
+                    <img src="imagens/hotroll.webp" alt="Principal">
+                    <h3>Hot Roll <span class="price">R$ 12,90</span></h3>
+                    <p>São 10 unidades de um tipo de sushi empanado e frito, feito com salmão, arroz japonês e cream cheese, enrolados em alga nori, empanados em uma massa de farinha de trigo e farinha panko.</p>
+                </div>
+                <div class="menu-item" data-category="principais">
+                    <img src="imagens/hotroll-camarao.png" alt="Principal">
+                    <h3>Hot Roll Camarão<span class="price">R$ 12,90</span></h3>
+                    <p>É um tipo de sushi empanado e frito, feito com camarão, arroz japonês e cream cheese, enrolados em alga nori, empanados em uma massa de farinha de trigo e farinha panko.</p>
+                </div>
 
                 <div class="menu-item" data-category="sobremesas">
+                    <img src="imagens/harumaki.jpg" alt="sobremesa 1">
                     <h3>Harumaki Doce <span class="price">R$ 52,90</span></h3>
                     <p>Rolinho primavera nas versões morango com chocolate ou banana com goiabada, servido com sorvete.</p>
                 </div>
+                <div class="menu-item" data-category="sobremesas">
+                    <img src="imagens/salmaoFlambado.jpg" alt="sobremesa 2">
+                    <h3>Salmão Flambado<span class="price">R$ 52,90</span></h3>
+                    <p>Salmão grelhado flambado com geleia de maracujá</p>
+                </div>
             </div>
             
-
-
-
-        </div>
-    </section>
+    </main>
 
     <footer>
         <div class="rodape">
