@@ -310,7 +310,7 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     padding: 30px 0;
-    position: flex;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }

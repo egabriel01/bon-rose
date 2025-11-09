@@ -52,16 +52,19 @@ document.getElementById('cardDishes').innerHTML = cardDishesMapper.join('')
 
 
 
-const menuLinks = document.querySelectorAll('nav ul li a[href^="#"]');
+    const menuLinks = document.querySelectorAll('nav ul li a[href^="#"]');
 
-menuLinks.forEach((link) => {
-    addEventListener("click", ()=>{
-        const idSecao = link.getAttribute('href')
-        const alvoSecao = document.querySelector(idSecao)
+    menuLinks.forEach((link) => {
+        link.addEventListener("click", (evento)=>{
 
-    alvoSecao.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+            evento.preventDefault();
+
+            const idSecao = link.getAttribute('href')
+            const alvoSecao = document.querySelector(idSecao)
+
+            alvoSecao ? (alvoSecao.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })) : null
+        })
     })
-    })
-})
