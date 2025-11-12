@@ -9,6 +9,7 @@ body {
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
+
 }
 
 .container {
@@ -117,16 +118,17 @@ nav ul li a:hover {
 
 .dishes {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
+    /* background-color: #2c3e50; */
 }
 
 .dish-card {
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    width: 300px;
+    width: 350px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -308,7 +310,7 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     padding: 30px 0;
-    position: flex;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
