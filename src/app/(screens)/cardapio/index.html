@@ -6,8 +6,10 @@
     <title>Bon Rosê - Cardápio</title>
     <link rel="stylesheet" href="../../../styles/style.css">
 </head>
+
 <body>
     <header>
+        
         <div class="container header-content">
             <p class="logo">Bon Rosê</p>
             <nav>
@@ -18,6 +20,7 @@
                     <li><a href="index.html#contact">Contato</a></li> -->
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -26,13 +29,49 @@
             
             <h2 class="section-title">Nosso Cardápio</h2>
 
+
+             <div class="carrinho-controls">
+            <div class="carrinho-icon" onclick="toggleCarrinho()">
+                🛒 <span id="contador-carrinho">0</span>
+            </div>
+        </div>
+
+        
             <div class="menu-categories">
                 <button class="category-btn active" id="entradas">Entradas</button>
                 <button class="category-btn" id="principais">Pratos Principais</button>
                 <button class="category-btn" id="sobremesas">Sobremesas</button>    
+                
             </div>
             <div id="menuItems" class="menu-items"></div>
+
+
+
+
+
+    <div id="carrinho-lateral" class="carrinho-lateral">
+        <div class="carrinho-header">
+            <h3>Seu Carrinho</h3>
+            <button class="btn-fechar-carrinho" onclick="toggleCarrinho()">×</button>
+        </div>
+        <div id="itens-carrinho" class="itens-carrinho">
+   
+        </div>
+        <div class="carrinho-footer">
+            <div class="total-carrinho">
+                <strong>Total: R$ <span id="total">0,00</span></strong>
+            </div>
+            <button id="btn-finalizar-compra" class="btn-finalizar">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <div class="carrinho-overlay" onclick="toggleCarrinho()"></div>
             
+
+
+
+
+    
     </main>
 
     <footer class="rodape">
@@ -42,5 +81,8 @@
     </footer>
 
     <script src="use-cardapio.js"></script>
+    <script src="carrinho.js"></script>
+ 
+
 </body>
 </html>

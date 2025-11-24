@@ -73,15 +73,38 @@ const arrayMenu = [{
                 //     <p>Salmão grelhado flambado com geleia de maracujá</p>
                 // </div> -->
 
-const menuMapper = arrayMenu.map(item => {
-return`
-<div class="menu-item" data-category=${item.category}>
-    <img src=${item.imgSrc} alt=${item.imgAlt} />
-    <h3>${item.title}kkk <span class="price">R$ ${item.price}</span></h3>
-    <p>${item.description}</p>
-</div>
-`
+
+
+
+
+
+
+
+const menuMapper = arrayMenu.map((item, index) => {
+    // Converter preço de string para número
+    const precoNumerico = parseFloat(item.price.replace(',', '.'));
+    // Criar ID único para o produto
+    const produtoId = index + 1;
+    
+    return `
+    <div class="menu-item" data-category="${item.category}">
+        <img src="${item.imgSrc}" alt="${item.imgAlt}" />
+        <h3>${item.title} <span class="price">R$ ${item.price}</span></h3>
+        <p>${item.description}</p>
+        <button class="btn-adicionar-carrinho" 
+                onclick="adicionarAoCarrinho(${produtoId}, '${item.title.replace(/'/g, "\\'")}', ${precoNumerico})">
+            Adicionar ao Carrinho
+        </button>
+    </div>
+    `
 })
+
+
+
+
+
+
+
 
 document.getElementById('menuItems').innerHTML = menuMapper.join('')
 
@@ -117,3 +140,11 @@ document.addEventListener('DOMContentLoaded', () => {
     filtrar('entradas');       // vai mostras só as Entradas ao carregar
     btnEntradas.classList.add('active');
 });
+
+
+
+
+
+
+
+
